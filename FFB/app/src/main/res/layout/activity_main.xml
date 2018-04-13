@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView android:id="@+id/txtjudull"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="OLSHO"
+        />
+    <AutoCompleteTextView android:id="@+id/txtProduk"
+        android:layout_width="222dp"
+        app:layout_constraintTop_toBottomOf="@id/txtjudull"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <Button android:id="@+id/btn2"
+        android:text="OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="22dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtjudull"
+        android:onClick="btnOnClick"
+        />
+    <TextView android:text="*Barang Tersedia : Smartphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ket"
+        app:layout_constraintTop_toBottomOf="@id/btn2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="5dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+
+        />
+    <TextView android:id="@+id/txtnama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ket"
+        android:text="Nama : "
+        />
+    <TextView android:id="@+id/txtnamafroduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/ket"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="48dp"
+        app:layout_constraintLeft_toLeftOf="@id/txtnama"
+        />
+    <TextView
+        android:id="@+id/tglkirim"
+        android:text="Tanggal Pengiriman :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        app:layout_constraintTop_toBottomOf="@id/txtnama"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <DatePicker android:id="@+id/datepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="333dp"
+        android:layout_marginLeft="19dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tglkirim"
+        ></DatePicker>
+    <Button android:id="@+id/btnwaktu"
+        android:text="Waktu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="19dp"
+        app:layout_constraintTop_toBottomOf="@id/datepicker"
+        android:onClick="btntime"
+        />
+
+</android.support.constraint.ConstraintLayout>
